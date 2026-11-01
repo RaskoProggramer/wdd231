@@ -1,0 +1,175 @@
+
+/*header*/
+header {
+    display: grid;
+    grid-template-columns: 24px auto 40px;
+    padding: 5px 0 5px 10px;
+    align-items: end;
+    border-bottom: solid 1px #ddd;
+    column-gap: 8px;
+}
+
+header img{
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 5px;
+}
+
+header span{
+    font-size: 1.2rem;
+    color: #3D405B;
+}
+
+/*Hamburger*/
+.hamburger {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #3D405B;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburger::before {
+    content: "\2630";
+}
+
+.hamburger.show::before{
+    content: "\00D7";
+}
+
+/*Navigation*/
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    display: block;
+    padding: .8rem 10px;
+    color: #3D405B;
+    text-decoration: none;
+    border-bottom: solid 1px #ddd;
+}
+
+.navigation li.current {
+    background-color: #ddd;
+}
+
+.navigation a:hover {
+    background-color: #E07A5F;
+}
+
+h1, h2 {
+    background-color: #1d3557;
+    color: #ddd;
+    margin-left: 10px;
+    text-align: center;
+}
+
+
+
+/*body grid*/
+
+.right-section img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+.right-section { 
+    padding: 0; 
+    overflow: hidden; 
+}
+
+.controls { 
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.bottom-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.filter-btn { 
+    padding: 8px 16px; 
+    cursor: pointer; 
+    border-radius: 4px; 
+    border: 1px solid #ccc; 
+}
+
+
+.course-card {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.course-card h3 {
+    text-align: center;
+    padding: 0.7rem;
+    border-radius: 5px;
+}
+
+.technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.technology {
+    background-color: #e0e0e0;
+    padding: 0.4rem 0.7rem;
+    border-radius: 4px;
+}
+
+.completion {
+    font-weight: bold;
+}
+
+/*Footer*/
+footer {
+    background-color: #eee;
+    padding: 1rem 10px;
+    text-align: center;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border: #ccc solid 1px;
+    border-radius: 22px;
+}
+
+.social img {
+    width: 22px;
+    height: 22px;
+}
+
+.social a:hover {
+    background-color: #ddd;
+}

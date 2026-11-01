@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/person-fill.svg" alt="site logo" width="16" height="16">
+        <span>Mpho Rakgope</span>
+        <button id="ham-btn" class="hamburger"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="#" aria-current="page">Home</a></li>
+            <li><a href="#">Chamber Projects</a></li>
+            <li><a href="#">Final Project</a></li>
+        </ul>
+    </nav>
+    <body>
+        <main>
+            <h1>Home</h1>
+       <div class="grid-container">
+            <section class="left-section">
+                <h2>About Me</h2>
+                <p>I'm a Self Taught Full-Stack Software Developer currently studying BS: Software Development
+                    I spend most of the time coding using HTML, C#, React, Node.js, CSS, Python and I have also
+                    Explored Cyber-Security SOC and a bit of writing web penetration scripts. My main Focus is to
+                    Build software that is secure and of standard practice, Hence I decided To go to school to learn
+                    What I could have missed
+                </p>
+            </section>
+            <section class="right-section">
+                <h2>Student Photo</h2>
+                <img src="images/mpho-rakgope.jpg" alt="Mpho Rakgope's photo">
+            </section>
+            <section class="bottom-section">
+                <h2>Web Certification Courses</h2>
+                <div class="controls">
+                    <button class="filter-btn" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="wdd">WWD Courses</button>
+                    <button class="filter-btn" data-filter="cse">CSE Courses</button>
+                </div>
+                <div class="courses"></div>
+            </section>
+       </div>
+        </main>
+    </body>
+    <footer>
+        <div class="social">
+            <a href="https://www.facebook.com/mpho.rakgope.2025" target="_blank"><img src="Images/facebook.svg" alt="Facebook" height="16" width="16"></a>
+            <a href="https://github.com/RaskoProggramer" target="_blank"><img src="Images/github.svg" alt="Github" height="16" width="16"></a>
+            <a href="https://www.linkedin.com/in/rakgopempho/" target="_blank"><img src="Images/linkedin.svg" alt="LinkedIn" height="16" width="16"></a>
+        </div>
+        <p>© <span id="currentyear"></span> Mpho Rakgope, South Africa</p>
+        <p><span id="lastupdated"></span></p>
+    </footer>
+</body>
+</html>
