@@ -60,3 +60,5 @@ function displayBusinness(business) {
         directory.appendChild(card);
     });
 }
+
+displayBusinness(business);
