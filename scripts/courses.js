@@ -9,7 +9,7 @@ const courses = [
         technology: [
             'Python'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -22,7 +22,7 @@ const courses = [
             'HTML',
             'CSS'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'CSE',
@@ -34,7 +34,7 @@ const courses = [
         technology: [
             'Python'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'CSE',
@@ -46,7 +46,7 @@ const courses = [
         technology: [
             'C#'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -60,7 +60,7 @@ const courses = [
             'CSS',
             'JavaScript'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -85,8 +85,6 @@ function displayCourses(filteredCourses) {
 
     gridContainer.innerHTML = "";
 
-    const courseCount = filteredCourses.length;
-
     filteredCourses.forEach(course => {
 
         const card = document.createElement("article");
@@ -99,6 +97,17 @@ function displayCourses(filteredCourses) {
 
         gridContainer.appendChild(card);
     });
+    const creditDisplayElement = document.createElement("p");
+
+    const totalCredits = courses.reduce((accumulator, currentItem) => {
+        if (currentItem.completed === true) {
+            return accumulator + currentItem.credits;
+        }
+        return accumulator;
+        }, 0);
+
+        creditDisplayElement.textContent = `Total Credits: ${totalCredits}`;
+        gridContainer.appendChild(creditDisplayElement);
 }
 
 filterButtons.forEach(button => {
