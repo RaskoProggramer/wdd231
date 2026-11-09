@@ -248,8 +248,8 @@ footer {
     text-align: center;
 }
 
-.address h3 {
-    color: var(--accent-color);
+.address .bold {
+    font-style: bold;
 }
 
 .footer-info {
