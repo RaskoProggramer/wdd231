@@ -2,7 +2,7 @@ const directory = document.querySelector('#directory');
 
 async function getBusinessData() {
     try {
-        const response = await fetch('../data/business.json');
+        const response = await fetch('data/business.json');
         const data = await response.json();
         return data.businesses;
     } catch (error) {
@@ -13,27 +13,83 @@ async function getBusinessData() {
 async function displayBusiness() {
     const business = await getBusinessData();
     business.forEach((business) => {
-        const card = document.createElement('section');
+         const card = document.createElement('article');
+        card.classList.add('business-card');
+
+        const image = document.createElement('img');
+        image.src = business.image;
+        image.alt = business.businessName;
+        image.loading = 'lazy';
+
+        const content = document.createElement('div');
+        content.classList.add('business-content');
+
         const businessName = document.createElement('h2');
-        const businessTagline = document.createElement('p');
-        const email = document.createElement('p');
-        const phone = document.createElement('p');
-        const url = document.createElement('a');
+        businessName.textContent = business.businessName;
 
-        businessName.textContent = `${business.businessName}`;
-        businessTagline.textContent = `${business.businessTagline}`;
-        email.textContent = `${business.email}`;
-        phone.textContent = `${business.phone}`;
-        url.setAttribute('href', business.url);
-        url.textContent = `${business.url}`;
+        const tagline = document.createElement('p');
+        tagline.classList.add('tagline');
+        tagline.textContent = business.businessTagline;
 
-        card.appendChild(businessName);
-        card.appendChild(businessTagline);
-        card.appendChild(email);
-        card.appendChild(phone);
-        card.appendChild(url);
+        const email = document.createElement('a');
+        email.href = `mailto:${business.email}`;
+        email.textContent = business.email;
+
+        const phone = document.createElement('a');
+        phone.href = `tel:${business.phone}`;
+        phone.textContent = business.phone;
+
+        const website = document.createElement('a');
+        website.href = business.url;
+        website.target = '_blank';
+        website.rel = 'noopener noreferrer';
+        website.textContent = 'Visit Website';
+        website.classList.add('website-link');
+
+        content.appendChild(businessName);
+        content.appendChild(tagline);
+        content.appendChild(email);
+        content.appendChild(phone);
+        content.appendChild(website);
+
+        card.appendChild(image);
+        card.appendChild(content);
+
         directory.appendChild(card);
     });
 }
 
 displayBusiness();
+
+const gridButton = document.querySelector("#grid-view");
+const listButton = document.querySelector("#list-view");
+
+function changeView(view) {
+
+    if (view === "grid") {
+        directory.classList.remove("list-view");
+
+        gridButton.classList.add("active");
+        listButton.classList.remove("active");
+
+        gridButton.setAttribute("aria-pressed", "true");
+        listButton.setAttribute("aria-pressed", "false");
+
+    } else {
+        directory.classList.add("list-view");
+
+        listButton.classList.add("active");
+        gridButton.classList.remove("active");
+
+        listButton.setAttribute("aria-pressed", "true");
+        gridButton.setAttribute("aria-pressed", "false");
+    }
+}
+
+gridButton.addEventListener("click", () => {
+    changeView("grid");
+});
+
+listButton.addEventListener("click", () => {
+    changeView("list");
+});

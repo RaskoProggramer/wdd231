@@ -12,30 +12,38 @@
     <meta property="og:url" content="https://raskoproggramer.github.io/wdd231/chamber/directory.html">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
     <link rel="stylesheet" href="styles/normalize.css">
     <script src="scripts/directory.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/dates.js" defer></script>
+    <script src="scripts/view.js" defer></script>
 </head>
 <body>
     <header>
         <img src="images/favicon.ico" alt="site logo" width="16" height="16">
         <span>Ekhuruleni Chamber of Commerce</span>
-        <button id="ham-btn" class="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-bar">></button>
+        <button id="ham-btn" class="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-bar"></button>
     </header>
     <nav id="nav-bar" class="navigation">
         <ul>
-            <li class="current"><a href="#home" aria-current="page">Home</a></li>
-            <li><a href="#chamber">Chamber Projects</a></li>
-            <li><a href="#project">Final Project</a></li>
+            <li ><a href="#home">Home</a></li>
+            <li><a class="current" href="#directory"  aria-current="page">Directory</a></li>
+            <li><a href="#join">Join</a></li>
+            <li><a href="#discover">Discover</a></li>
         </ul>
     </nav>
     <main>
         <h1>Directory</h1>
-        <div id="directory"></div>
+        <div class="view-buttons">
+            <button type="button" id="grid-view" class="active" aria-label="Grid view" aria-pressed="true">▦ Grid</button>
+            <button type="button" id="list-view" aria-label="List view" aria-pressed="false">☰ List</button>
+        </div>
+        <div id="directory" class="directory"></div>
     </main>
     <footer>
         <div class="address">
+            <h3>Ekhuruleni Chamber of Commerce</h3>
             <p>16271 Lweti street</p>
             <p>Palm Ridge Ext9 1458</p>
             <p>rakgopempho@gmail.com</p>
@@ -46,7 +54,7 @@
             <a href="https://github.com/RaskoProggramer" target="_blank"><img src="images/github.svg" alt="Github" height="16" width="16"></a>
             <a href="https://www.linkedin.com/in/rakgopempho/" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn" height="16" width="16"></a>
         </div>
-        <div>
+        <div class="footer-info">
             <p>WDD231 Class Project</p>
             <p>Mpho Rakgope</p>
             <p>© <span id="currentyear"></span> Ekhuruleni Chamber of Commerce</p>
