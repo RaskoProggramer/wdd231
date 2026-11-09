@@ -124,13 +124,6 @@ h1, h2 {
     color: var(--white-color);
 }
 
-/* Grid view */
-.directory {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-}
-
 /* List view */
 .directory.list-view {
     display: flex;
