@@ -7,6 +7,13 @@
     --white-color: #FFFFFF;
     --border-color: #DDDDDD;
 }
+
+.astloch-regular {
+  font-family: "Astloch", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
 /*header*/
 header {
     display: grid;
