@@ -2,60 +2,66 @@
   "businesses": [
   {
     "businessName": "Chauke Corncelia",
-    "businessTagline": "Professional legal guidance built around your needs, your interests and the matters that matter most.",
+    "address": "13 Choria Ave, Palm Ridge, Katlehong, 1458",
     "email": "info@chaukecattorneys.co.za",
     "phone": "+27 10 746 4808",
     "url": "https://chaukecattorneys.co.za/",
-    "image": "images/chaukecattorneys.webp"
+    "image": "images/chaukecattorneys.webp",
+    "membership": "Gold"
   },
   {
     "businessName": "Young Barber",
-    "businessTagline": "Five spots. One standard. Always sharp.",
+    "address": "29 Terraplane St, Eden Park, Alberton, 1458",
     "email": "info@youngbarber.co.za",
     "phone": "+27 81 404 4756",
     "url": "https://youngbarber.co.za/",
-    "image": "images/youngbarber.jpg"
+    "image": "images/youngbarber.jpg",
+    "membership": "Gold"
   },
   {
     "businessName": "Alrode Fabric & Lifestyle centre",
-    "businessTagline": "Discover fabrics, haberdashery and homeware at Alrode Fabrics to bring your creative ideas to life and make your home your own.",
+    "address": "12a Borax St, Alrode, Johannesburg, 1448",
     "email": "info@alrodefabric.co.za",
     "phone": "+27 76 929 2409",
     "url": "https://alrodefabric.co.za/",
-    "image": "images/alrode-fabric.jpg"
+    "image": "images/alrode-fabric.jpg",
+    "membership": "Silver"
   },
   {
     "businessName": "Benvenuti",
-    "businessTagline": "weddings and functions venue",
+    "address": "16 Heidelberg Rd, Garthdale, Kliprivier, 1871",
     "email": "info@benvenuti.co.za",
     "phone": "+27 82 782 1184",
     "url": "https://benvenuti.co.za/",
-    "image": "images/benvenuti.jpg"
+    "image": "images/benvenuti.jpg",
+    "membership": "Silver"
   },
   {
     "businessName": "Ceba Projects",
-    "businessTagline": "Build with excellence. Inspired by innovation.",
+    "address": "307 Verbena St, Greenfields, Alberton, 1458",
     "email": "info@cebaprojects.co.za",
     "phone": "+27 68 103 3534",
     "url": "https://cebaprojects.co.za/",
-    "image": "images/cebaprojects.avif"
+    "image": "images/cebaprojects.avif",
+    "membership": "Gold"
   },
   {
     "businessName": "Sky City Mall",
-    "businessTagline": "GMI Property Group Development Company",
+    "address": "Vereeniging NU",
     "email": "info@gmigroup.co.za",
     "phone":  "+27 12 345 2997",
     "url": "https://gmigroup.co.za/",
-    "image": "images/skycitymall.jpg"
+    "image": "images/skycitymall.jpg",
+    "membership": "Gold"
   },
   {
     "businessName": "Royal Schools",
-    "businessTagline": "We believe that we have the perfect recipe to make quality private education affordable.",
+    "address": "corner Lemon Shark and Kingfish street Sky City Watervalspruit, 1724",
     "email" : "info@royalschools.co.za",
     "phone": "+27 12 324 1069",
     "url": "https://royalschools.co.za/",
-    "image": "images/royal-schools.webp"
-
+    "image": "images/royal-schools.webp",
+    "membership": "Silver"
   }
   ]
 }
