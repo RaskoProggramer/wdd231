@@ -46,12 +46,17 @@ async function displayBusiness() {
         website.textContent = 'Visit Website';
         website.classList.add('website-link');
 
+        const membership = document.createElement('p');
+        membership.classList.add('membership');
+        membership.textContent = `Membership: ${business.membership}`;
+
         content.appendChild(businessName);
         content.appendChild(address);
         content.appendChild(email);
         content.appendChild(phone);
+        content.appendChild(membership);
         content.appendChild(website);
-
+        
         card.appendChild(image);
         card.appendChild(content);
 
