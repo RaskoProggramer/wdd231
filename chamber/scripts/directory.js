@@ -27,9 +27,9 @@ async function displayBusiness() {
         const businessName = document.createElement('h2');
         businessName.textContent = business.businessName;
 
-        const tagline = document.createElement('p');
-        tagline.classList.add('tagline');
-        tagline.textContent = business.businessTagline;
+        const address = document.createElement('p');
+        address.classList.add('address');
+        address.textContent = business.address;
 
         const email = document.createElement('a');
         email.href = `mailto:${business.email}`;
@@ -47,7 +47,7 @@ async function displayBusiness() {
         website.classList.add('website-link');
 
         content.appendChild(businessName);
-        content.appendChild(tagline);
+        content.appendChild(address);
         content.appendChild(email);
         content.appendChild(phone);
         content.appendChild(website);
