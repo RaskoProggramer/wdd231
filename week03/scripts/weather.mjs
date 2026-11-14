@@ -4,9 +4,8 @@ const captionDesc = document.querySelector('figcaption');
 
 const lat = 49.751606897091555;
 const lon = 6.630220157041841;
-const apiKey = 'aa0ac129f9892bca0de6f7e147d49c9c';
 
-const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=imperial`;
+const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=aa0ac129f9892bca0de6f7e147d49c9c&units=imperial`;
 
 async function apiFetch() {
     try {

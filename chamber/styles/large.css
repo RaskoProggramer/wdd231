@@ -17,6 +17,10 @@
     .navigation ul {
         display: flex;
     }
+    .navigation li.current a {
+        border-left: none;
+        border-bottom: 4px solid var(--secondary-color);
+    }
     .directory {
         grid-template-columns: repeat(3, 1fr);
     }
