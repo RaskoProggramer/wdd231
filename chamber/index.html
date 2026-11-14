@@ -19,6 +19,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Astloch:wght@400;700&family=Estonia&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/dates.js" defer></script>
+    <script type="module" src="scripts/weather.mjs" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
 </head>
 <body>
     <header>
@@ -35,25 +37,39 @@
         </ul>
     </nav>
     <main>
-        <div class="hero-section">
-            <h1>Welcome to Ekhuruleni Chamber of Commerce</h1>
-            <img src="images/alrode-fabric.jpg" alt="Ekhuruleni Chamber of Commerce" width="600" height="400">
+        <section>
+            <div class="hero-section">
+            <img src="images/ekhuruleni.jpg"alt="Ekurhuleni Chamber of Commerce" class="hero-image">
             <div class="hero-overlay"></div>
-            <div class="hero-text">
-                <p>A chamber of commerce is a local organization of businesses that work together to strengthen the business interests of the group.</p>
+            <div class="hero-content">
+                <h1>Welcome to Ekurhuleni Chamber of Commerce</h1>
+                <p>A chamber of commerce is a local organization of
+                    businesses that work together to strengthen the
+                    business interests of the group.
+                </p>
+                <a href="join.html" class="hero-button">Join</a>
             </div>
         </div>
-        <section id="current-events">
-            <h2>Current Events</h2>
+        </section>
+        <section id="current-events" class="current-events-section">
+            <h3>Current Events</h3>
             <p>Check out our upcoming events and activities!</p>
         </section>
-        <section id="weather">
-            <h2>Weather</h2>
-            <p>Stay updated with the latest weather information for our area.</p>
+        <section id="weather" class="weather-section">
+            <h3>Current Weather</h3>
+            <div class="current-weather">
+                <p>Temperature:<span id="current-temp"></span>°F</p>
+                <figure>
+                    <img id="weather-icon" src="" alt="Weather icon">
+                    <figcaption></figcaption>
+                </figure>
+            </div>
+            <h3 class="forecast-heading">Three-Day Forecast</h3>
+            <div id="forecast" class="forecast-grid"></div>
         </section>
-        <section id="spotlight">
-            <h2>Spotlight</h2>
-            <p>Discover our featured businesses and members of the chamber.</p>
+        <section class="spotlight-section">
+            <h2>Business Member Spotlight</h2>
+            <div id="spotlight-container" class="spotlight-grid"></div>
         </section>
     </main>
     <footer>
