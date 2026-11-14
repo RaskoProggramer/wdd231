@@ -110,17 +110,6 @@ section {
     margin: 0;
 }
 
-.directory-section h1 {
-    background-color: var(--accent-color);
-    padding: 0.7rem;
-}
-
-.business-content h2 {
-    background: none;
-    text-align: left;
-    margin: 0;
-}
-
 /*Directory Section*/
 /* View buttons */
 .view-buttons {
