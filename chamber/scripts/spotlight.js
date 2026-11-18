@@ -61,7 +61,7 @@ function displaySpotlights(members) {
                 ${member.membership} Membership
             </p>
             <a href="${member.url}" target="_blank"
-               rel="noopener noreferrer">Visit Website</a>
+               rel="noopener noreferrer">${member.url}</a>
         `;
 
         spotlightContainer.appendChild(card);

@@ -1,8 +1,8 @@
 @media screen and (min-width: 768px){
-    header, main, nav, footer {
+    /* header, main, nav, footer {
         max-width: 900px;
         margin: 0 auto;
-    }
+    } */
 
     header {
         grid-template-columns: 24px auto;
