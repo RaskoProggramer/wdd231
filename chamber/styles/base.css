@@ -697,17 +697,6 @@ input[type="submit"]:active {
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
 }
 
-#membership-modal::backdrop {
-    background: rgba(0, 0, 0, 0.6);
-}
-
-#close-modal {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-}
-
 .modal-container {
     position: relative;
 }

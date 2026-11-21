@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ekuruleni Business Directory</title>
+    <title>Join | Ekuruleni Business Directory</title>
     <meta name="author" content="Mpho Rakgope">
     <meta name="description" content="A web page to show A chamber of commerce is a local organization of businesses that work together to strengthen the business interests of the group.">
     <meta property="og:description" content="A web page to show A chamber of commerce is a local organization of businesses that work together to strengthen the business interests of the group.">
@@ -37,13 +37,13 @@
     </nav>
     <main>
         <h1>Join</h1>
-        <form method="get" action="thank-you.html" class="post">
-            <label for="firstName">First Name <input type="text" name="firstName" autocomplete="given-name" title="Enter the applicant's first name"></label>
-            <label for="lastName">Last Name  <input type="text" name="lastName" title="Enter Applicants last name" autocomplete="cc-family-name" required></label>
-            <label for="organizational-title">Organizational title  <input type="text" name="organizational-title" title="Must contain at least 7 characters using only letters, spaces, or hyphens" autocomplete="organization-title" pattern="[A-Za-z -]{7,}" required>
-            <label for="email">Email <input type="email" name="email" title="Enter email" autocomplete="email" placeholder="Ekhuruleni@example.co.za"></label>
-            <label for="phone-number">Phone Number <input type="tel" name="phone-number" title="Enter Phone Number" autocomplete="mobile" required></label>
-            <label for="business-name">Business Name <input type="text" name="business-name" title="Enter Business name" autocomplete="organization" required></label>
+        <form method="get" action="thankyou.html" class="post">
+            <label for="firstName">First Name <input type="text" name="firstName" id="firstName" autocomplete="given-name" title="Enter the applicant's first name" required></label>
+            <label for="lastName">Last Name  <input type="text" name="lastName" id="lastName" title="Enter Applicants last name" autocomplete="family-name" required></label>
+            <label for="organizational-title">Organizational title  <input type="text" name="organizational-title" id="organizational=title" title="Must contain at least 7 characters using only letters, spaces, or hyphens" autocomplete="organization-title" pattern="[A-Za-z -]{7,}" required>
+            <label for="email">Email <input type="email" name="email" id="email" title="Enter email" autocomplete="email" placeholder="Ekhuruleni@example.co.za" required></label>
+            <label for="phone-number">Phone Number <input type="tel" name="phone-number" id="phone-number" title="Enter Phone Number" autocomplete="tel" required></label>
+            <label for="business-name">Business Name <input type="text" name="business-name" id="business-name" title="Enter Business name" autocomplete="organization" required></label>
             <fieldset class="membership">
                 <legend>Membership Level</legend>
                 <label for="membership">Choose Membership:</label>
