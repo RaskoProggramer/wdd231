@@ -711,10 +711,6 @@ input[type="submit"]:active {
     cursor: pointer;
 }
 
-#modal-content h2 {
-    text-align: center;
-}
-
 
 /* Modal initial appearance */
 #membership-modal[open] {
@@ -755,6 +751,7 @@ input[type="submit"]:active {
 }
 
 #modal-content h2 {
+    text-align: center;
     animation-delay: 0.15s;
 }
 
