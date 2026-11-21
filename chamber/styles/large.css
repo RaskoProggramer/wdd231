@@ -22,9 +22,9 @@
         display: flex;
     }
 
-    .navigation li.current a {
-        border-left: none;
-        border-bottom: 4px solid var(--secondary-color);
+    .navigation a.current {
+    border-left: none;
+    border-bottom: 4px solid var(--secondary-color);
     }
 
     .directory {

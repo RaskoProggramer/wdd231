@@ -1,0 +1,42 @@
+[
+     {
+        "level": "NP",
+        "title": "NP Membership",
+        "description": "For non-profit organisations.",
+        "benefits": [
+            "Networking opportunities",
+            "Community support"
+        ]
+    },
+    {
+        "level": "bronze",
+        "title": "Bronze Membership",
+        "description": "Our entry-level membership with access to basic business resources.",
+        "benefits": [
+            "Access to networking events",
+            "Business directory listing",
+            "Monthly newsletter"
+        ]
+    },
+    {
+        "level": "silver",
+        "title": "Silver Membership",
+        "description": "Additional opportunities to grow your business.",
+        "benefits": [
+            "All Bronze benefits",
+            "Discounted event tickets",
+            "Business promotion opportunities"
+        ]
+    },
+    {
+        "level": "gold",
+        "title": "Gold Membership",
+        "description": "Premium benefits for established businesses.",
+        "benefits": [
+            "All Silver benefits",
+            "Priority business exposure",
+            "Exclusive networking opportunities"
+        ]
+    }
+
+]

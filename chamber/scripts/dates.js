@@ -15,3 +15,10 @@ lastModified.textContent = `Last Modification: ${new Intl.DateTimeFormat(
         timeStyle: "medium"
     }
 ).format(new Date(document.lastModified))}`;
+
+document.addEventListener("DOMContentLoaded", () => {
+    const timestampField = document.getElementById("timestamp");
+    if (timestampField) {
+      timestampField.value = new Date().toISOString();
+    }
+});
