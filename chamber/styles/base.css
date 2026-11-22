@@ -124,7 +124,6 @@ header span {
     background-color: var(--primary-color);
     color: var(--white-color);
     font-weight: bold;
-    border-left: 5px solid var(--secondary-color);
 }
 
 /* HERO SECTION */
@@ -741,7 +740,6 @@ input[type="submit"]:active {
     }
 }
 
-/* Membership benefits initial animation */
 #modal-content h2,
 #modal-content p,
 #modal-content h3,
