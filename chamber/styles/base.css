@@ -127,7 +127,7 @@ header span {
 }
 
 /* HERO SECTION */
-.hero-section {
+.hero {
     position: relative;
     width: 100%;
     min-height: 450px;
