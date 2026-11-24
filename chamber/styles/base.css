@@ -1,12 +1,12 @@
 
 :root {
-    --primary-color: #3D405B;
-    --secondary-color: #E07A5F;
-    --accent-color: #3BE3D3;
-    --text-color: #333333;
-    --light-color: #F4F4F4;
+    --primary-color: #2136f2;
+    --secondary-color: #d82170;
+    --accent-color: #b1e33b;
+    --text-color: #060706;
+    --light-color: #e4d8d8;
     --white-color: #FFFFFF;
-    --border-color: #DDDDDD;
+    --border-color: #14b9a5;
 }
 
 /* GENERAL */
