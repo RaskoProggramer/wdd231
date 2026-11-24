@@ -334,7 +334,7 @@ header span {
     grid-template-columns: 1fr;
     justify-items: center;
     gap: 0.75rem;
-    max-width: 500px;
+    max-width: 750%;
     margin: 0 auto;
 }
 
