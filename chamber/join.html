@@ -40,7 +40,7 @@
         <form method="get" action="thankyou.html" class="post">
             <label for="firstName">First Name <input type="text" name="firstName" id="firstName" autocomplete="given-name" title="Enter the applicant's first name" required></label>
             <label for="lastName">Last Name  <input type="text" name="lastName" id="lastName" title="Enter Applicants last name" autocomplete="family-name" required></label>
-            <label for="organizational-title">Organizational title  <input type="text" name="organizational-title" id="organizational-title" title="Must contain at least 7 characters using only letters, spaces, or hyphens" autocomplete="organization-title" pattern="[A-Za-z -]{7,}" required></label>
+            <label for="organizational-title">Organizational title  <input type="text" name="organizational-title" id="organizational-title" autocomplete="organization-title" pattern="[A-Za-z\s-]{7,}" title="Must contain at least 7 characters using only letters, spaces, or hyphens" required></label>
             <label for="email">Email <input type="email" name="email" id="email" title="Enter email" autocomplete="email" placeholder="Ekhuruleni@example.co.za" required></label>
             <label for="phone-number">Phone Number <input type="tel" name="phone-number" id="phone-number" title="Enter Phone Number" autocomplete="tel" required></label>
             <label for="business-name">Business Name <input type="text" name="business-name" id="business-name" title="Enter Business name" autocomplete="organization" required></label>
