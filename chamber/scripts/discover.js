@@ -69,4 +69,3 @@ async function discoverCard() {
 }
 
 discoverCard();
-
