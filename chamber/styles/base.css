@@ -828,7 +828,8 @@ input[type="submit"]:active {
   overflow: hidden;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.08);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  max-width: 350px;
+  width: 100%;
+  min-width: 0;
 }
 
 .business-card:hover {
@@ -836,35 +837,35 @@ input[type="submit"]:active {
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.12);
 }
 
-.card-photo {
+.discover-photo {
   width: 100%;
   height: 200px;
   object-fit: cover;
   display: block;
 }
 
-.card-title {
+.discover-title {
   font-size: 1.25rem;
   font-weight: 700;
   color: var(--text-color);
   margin: 1rem 1.25rem 0.25rem;
 }
 
-.card-address {
+.discover-address {
   font-size: 0.875rem;
   color: var(--text-color);
   margin: 0 1.25rem 0.75rem;
 }
 
-.card-description {
+.discover-description {
   font-size: 0.95rem;
   color: var(--text-color);
   line-height: 1.5;
   margin: 0 1.25rem 1.25rem;
-  flex-grow: 1; /* Pushes the button to the bottom */
+  flex-grow: 1;
 }
 
-.card-btn {
+.discover-btn {
   display: inline-block;
   text-align: center;
   background-color: var(--primary-color);
@@ -875,10 +876,23 @@ input[type="submit"]:active {
   margin: 0 1.25rem 1.25rem;
   border-radius: 8px;
   transition: background-color 0.2s ease;
+  margin-top: auto;
 }
 
-.card-btn:hover {
+.discover-btn:hover {
   background-color: var(--secondary-color);
+}
+
+.discover-btn:focus-visible {
+  outline: 3px solid var(--secondary-color);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .business-card,
+  .discover-btn {
+    transition: none;
+  }
 }
 
 .visit-message {
