@@ -61,7 +61,7 @@ async function discoverCard() {
           <h2 class="card-title">${item.title}</h2>
           <p class="card-description">${item.description}</p>
            <p class="card-address">${item.address}</p>
-          <a class="card-btn" href="${item.link}">Learn More</a>
+          <a class="card-btn" href="${item.link}" aria-label="Learn more about ${item.title}>Learn More</a>
         </article>
       `
       )
