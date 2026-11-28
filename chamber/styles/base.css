@@ -819,7 +819,7 @@ input[type="submit"]:active {
     "card8";
 }
 
-.business-card {
+.discover-card {
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
@@ -832,7 +832,7 @@ input[type="submit"]:active {
   min-width: 0;
 }
 
-.business-card:hover {
+.discover-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.12);
 }

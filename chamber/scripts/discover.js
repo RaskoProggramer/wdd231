@@ -51,7 +51,7 @@ async function discoverCard() {
     grid.innerHTML = items
       .map(
         (item, index) => `
-        <article class="business-card card-${index + 1}">
+        <article class="discover-card card-${index + 1}">
           <img
             class="card-photo"
             src="${item.photo}"
