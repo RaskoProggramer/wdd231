@@ -1,0 +1,58 @@
+[
+  {
+    "title": "Ceba Projects",
+    "address": "307 Verbena Crescent, Greenfields, Alberton, 1458, South Africa.",
+    "description": "a youth-led, 100% black woman-owned construction and maintenance company founded in April 2017 by Nondumiso Amanda Ceba. Based in Greenfields, Alberton (East Rand, Gauteng), the company focuses on building, maintenance, skills development, and community upliftment.",
+    "photo": "images/cebaprojects.webp",
+    "link": "https://www.cebaprojects.co.za/"
+  },
+  {
+    "title": "Katlehong Art Centre",
+    "address": "203 Sontonga Rd, Katlehong, 1431",
+    "description": "Historic community arts institution showcasing local painting, sculpture, and pottery while offering creative workshops and galleries for youth and adults.",
+    "photo": "images/katlehong-art-centre.webp",
+    "link": "https://www.facebook.com/pages/Katlehong-Art-Centre/277984285639854"
+  },
+  {
+    "title": "Thokoza Value Centre",
+    "address": "9102 Matsemela St, Thokoza, 1426",
+    "description": "a youth-led, 100% black woman-owned construction and maintenance company founded in April 2017 by Nondumiso Amanda Ceba. Based in Greenfields, Alberton (East Rand, Gauteng), the company focuses on building, maintenance, skills development, and community upliftment",
+    "photo": "images/thokoza-youth-centre.webp",
+    "link": "https://joburg.co.za/food-drink/kfc-thokoza-value-centre"
+  },
+  {
+    "title": "Thokoza Auditorium",
+    "address": "Khumalo St, Tshongweni, Thokoza, 1426",
+    "description": "Spacious civic and cultural venue hosting live concerts, community gatherings, graduations, and public events.",
+    "photo": "images/thokoza.webp",
+    "link": "https://www.facebook.com/pages/Thokoza%20Auditorium./281617885216025/#"
+  },
+  {
+    "title": "S&A Traders",
+    "address": "5529 Teebos St, Palm Ridge, Katlehong, 1458",
+    "description": "Local one-stop retail store supplying affordable home furniture, kitchenware, décor, DIY tools, and building hardware.",
+    "photo": "images/s-and-a.webp",
+    "link": "https://snatraders.com/"
+  },
+  {
+    "title": "Meat Choice Palm Ridge",
+    "address": "Palm Ridge, Katlehong, 1488",
+    "description": "Popular neighborhood butchery, grocery stop, and liquor outlet with spacious parking and an on-site braai area serving Palm Ridge residents.",
+    "photo": "images/meat-choice.webp",
+    "link": "https://www.facebook.com/PitaGroupInvestments/"
+  },
+  {
+    "title": "Lebokasi Eden Park",
+    "address": "58 Lancia Ave, Eden Park, Alberton, 1455",
+    "description": "Central Eden Park retail hub featuring fresh produce, everyday groceries, multi-bank ATMs, and convenient on-site parking.",
+    "photo": "images/lebokasi.webp",
+    "link": "https://www.facebook.com/Edenparkmarket/"
+  },
+  {
+    "title": "Sky City Mall",
+    "address": "Cosmopolitan Dr, Watervalspruit Ext 1, Alberton, 1447",
+    "description": "Modern regional retail center anchored by supermarkets, national clothing brands, banks, ATMs, and fast-food restaurants serving Sky City and surrounding areas.",
+    "photo": "images/skycity.webp",
+    "link": "https://www.gmigroup.co.za/portfolio/skycity-mall/"
+  }
+]

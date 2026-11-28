@@ -1,4 +1,4 @@
-@media screen and (min-width: 768px){
+@media screen and (min-width: 1024px){
     /* header, main, nav, footer {
         max-width: 900px;
         margin: 0 auto;
@@ -75,6 +75,13 @@
     .spotlight-grid {
         grid-template-columns: repeat(3, 1fr);
     }
+
+    .discover-grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "card1 card2 card3 card4"
+      "card5 card6 card7 card8";
+  }
 
     footer {
     display: grid;
